@@ -22,8 +22,8 @@
 </head>
 
 <body>
-  
- 
+
+
   <div class="jumbotron jumb__main" style="padding-top: 0; padding-bottom: 0">
     <!-- NAVBAR-->
     <nav class="navbar navbar-dark bg-dark" style="margin-bottom: 0; background-color: transparent; border: none;">
@@ -49,7 +49,7 @@
       </div>
     </nav>
 
- <!-- HEADER-->
+    <!-- HEADER-->
     <div class=" container jumb__sub ">
       <div class="jumbotron jumb__sub">
         <h1 class="jumb__main-text" style="color: ivory; font-weight: 900">
@@ -65,24 +65,25 @@
 
   <!-- JIGSAW MAIN-->
 
-  <div data-identifier='zero'  class='jigsaw__grid-container'>
-    <div data-identifier='one' id="droppable" class="ui-widget-header jigsaw__grid-item jigsaw__grid-item--1"></div>
-    <div class="jigsaw__grid-item jigsaw__grid-item--2""></div>
-            <div class=" jigsaw__grid-item jigsaw__grid-item--3""></div>
-    <div class="jigsaw__grid-item jigsaw__grid-item--4"></div>
-    <div class="jigsaw__grid-item jigsaw__grid-item--5""></div>
-            <div class=" jigsaw__grid-item jigsaw__grid-item--6""></div>
+  <div data-identifier='zero' class='jigsaw__grid-container'>
+    <div data-identifier='one' class="droppable ui-widget-header jigsaw__grid-item jigsaw__grid-item--1"></div>
+    <div data-identifier='two' class="droppable jigsaw__grid-item jigsaw__grid-item--2""></div>
+    <div class="droppable jigsaw__grid-item jigsaw__grid-item--3""></div>
+    <div class="droppable jigsaw__grid-item jigsaw__grid-item--4"></div>
+    <div class="droppable jigsaw__grid-item jigsaw__grid-item--5""></div>
+    <div class="droppable jigsaw__grid-item jigsaw__grid-item--6""></div>
   </div>
 
 
   <!-- JIGSAW ELEMENTS-->
+
   <div data-identifier='zero' class='jigsaw__flex-container'>
-    <div data-identifier='one' id="draggable" class="ui-widget-content jigsaw__flex-item jigsaw__flex-item--1"></div>
-    <div class="jigsaw__flex-item jigsaw__flex-item--2""></div>
-            <div class=" jigsaw__flex-item jigsaw__flex-item--3""></div>
-    <div class="jigsaw__flex-item jigsaw__flex-item--4"></div>
-    <div class="jigsaw__flex-item jigsaw__flex-item--5""></div>
-            <div class=" jigsaw__flex-item jigsaw__flex-item--6""></div>
+    <div data-identifier='one' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--1"></div>
+    <div data-identifier='two' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--2""></div>
+    <div class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--3""></div>
+    <div class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--4"></div>
+    <div class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--5""></div>
+    <div class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--6""></div>
   </div>
 
 
@@ -94,7 +95,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="scripts.js"></script>
 
-  
+
 
 
 </body>
