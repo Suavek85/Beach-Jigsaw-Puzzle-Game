@@ -52,13 +52,13 @@ a[class="navbar-brand"]:hover {
 
   width: 200px;
   height: 200px;
-  background-color: orange;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 .jigsaw__grid-item--1,
 .jigsaw__grid-item--3,
 .jigsaw__grid-item--5 {
-  background-color: red;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
 /* JIGSAW SUB */
@@ -67,6 +67,7 @@ a[class="navbar-brand"]:hover {
   display: flex;
   justify-content: center;
   margin: 50px auto 50px auto;
+
 }
 
 .jigsaw__flex-item {
@@ -78,13 +79,36 @@ a[class="navbar-brand"]:hover {
 
 }
 
-.jigsaw__grid-item--1,
-.jigsaw__grid-item--3,
-.jigsaw__grid-item--5 {
+.jigsaw__flex-item--1 {
+  background-image: url(images/image_part_001.jpg)
+}
 
-  background-color: red;
+.jigsaw__flex-item--2 {
+  background-image: url(images/image_part_002.jpg)
+}
+
+.jigsaw__flex-item--3 {
+  background-image: url(images/image_part_003.jpg)
+}
+
+.jigsaw__flex-item--4 {
+  background-image: url(images/image_part_004.jpg)
+}
+
+.jigsaw__flex-item--5 {
+  background-image: url(images/image_part_005.jpg)
+}
+
+.jigsaw__flex-item--6 {
+  background-image: url(images/image_part_006.jpg)
 }
 
 .highlight {
   opacity: 1;
+}
+
+/*  ALERT */
+
+.alert-extra {
+  text-align: center;
 }

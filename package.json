@@ -1,0 +1,23 @@
+{
+  "name": "beach-jigsaw-puzzle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suavek85/Beach-Jigsaw-Puzzle-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suavek85/Beach-Jigsaw-Puzzle-Game/issues"
+  },
+  "homepage": "https://github.com/Suavek85/Beach-Jigsaw-Puzzle-Game#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

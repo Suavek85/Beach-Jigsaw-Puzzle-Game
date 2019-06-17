@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Beach Jigsaw Puzzle Game</title>
-
-  <!--
-<link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    -->
-
-
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-
   <div class="jumbotron jumb__main" style="padding-top: 0; padding-bottom: 0">
     <!-- NAVBAR-->
     <nav class="navbar navbar-dark bg-dark" style="margin-bottom: 0; background-color: transparent; border: none;">
@@ -57,46 +44,42 @@
         </h1>
         <p>...</p>
         <p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Get random beach</a>
         </p>
       </div>
     </div>
   </div>
 
-  <!-- JIGSAW MAIN-->
+  <!-- ALERT-->
+  <div class="alert alert-info alert-extra" role="alert">
+    Try this jigsaw puzzle!
+  </div>
 
+  <!-- JIGSAW MAIN-->
   <div data-identifier='zero' class='jigsaw__grid-container'>
     <div data-identifier='one' class="droppable ui-widget-header jigsaw__grid-item jigsaw__grid-item--1"></div>
     <div data-identifier='two' class="droppable jigsaw__grid-item jigsaw__grid-item--2""></div>
-    <div class="droppable jigsaw__grid-item jigsaw__grid-item--3""></div>
-    <div class="droppable jigsaw__grid-item jigsaw__grid-item--4"></div>
-    <div class="droppable jigsaw__grid-item jigsaw__grid-item--5""></div>
-    <div class="droppable jigsaw__grid-item jigsaw__grid-item--6""></div>
+    <div data-identifier='three' class=" droppable jigsaw__grid-item jigsaw__grid-item--3""></div>
+    <div data-identifier='four' class="droppable jigsaw__grid-item jigsaw__grid-item--4"></div>
+    <div data-identifier='five' class="droppable jigsaw__grid-item jigsaw__grid-item--5""></div>
+    <div data-identifier='six' class=" droppable jigsaw__grid-item jigsaw__grid-item--6""></div>
   </div>
-
 
   <!-- JIGSAW ELEMENTS-->
-
   <div data-identifier='zero' class='jigsaw__flex-container'>
+    <div data-identifier='three' class=" draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--3""></div>
+    <div data-identifier='five' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--5""></div>
     <div data-identifier='one' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--1"></div>
+    <div data-identifier='six' class=" draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--6""></div>
     <div data-identifier='two' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--2""></div>
-    <div class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--3""></div>
-    <div class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--4"></div>
-    <div class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--5""></div>
-    <div class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--6""></div>
+    <div data-identifier='four' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--4"></div>
   </div>
 
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <!-- SCRIPTS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="scripts.js"></script>
-
-
-
 
 </body>
 
