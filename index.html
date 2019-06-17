@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Beach Jigsaw Puzzle Game</title>
+
+  <!--
+<link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    -->
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  
+ 
+  <div class="jumbotron jumb__main" style="padding-top: 0; padding-bottom: 0">
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-dark bg-dark" style="margin-bottom: 0; background-color: transparent; border: none;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Beach Jigsaw Puzzle</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">Link <span class="sr-only">(current)</span></a>
+            </li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+ <!-- HEADER-->
+    <div class=" container jumb__sub ">
+      <div class="jumbotron jumb__sub">
+        <h1 class="jumb__main-text" style="color: ivory; font-weight: 900">
+          Beach jigsaw puzzle!
+        </h1>
+        <p>...</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JIGSAW MAIN-->
+
+  <div data-identifier='zero'  class='jigsaw__grid-container'>
+    <div data-identifier='one' id="droppable" class="ui-widget-header jigsaw__grid-item jigsaw__grid-item--1"></div>
+    <div class="jigsaw__grid-item jigsaw__grid-item--2""></div>
+            <div class=" jigsaw__grid-item jigsaw__grid-item--3""></div>
+    <div class="jigsaw__grid-item jigsaw__grid-item--4"></div>
+    <div class="jigsaw__grid-item jigsaw__grid-item--5""></div>
+            <div class=" jigsaw__grid-item jigsaw__grid-item--6""></div>
+  </div>
+
+
+  <!-- JIGSAW ELEMENTS-->
+  <div data-identifier='zero' class='jigsaw__flex-container'>
+    <div data-identifier='one' id="draggable" class="ui-widget-content jigsaw__flex-item jigsaw__flex-item--1"></div>
+    <div class="jigsaw__flex-item jigsaw__flex-item--2""></div>
+            <div class=" jigsaw__flex-item jigsaw__flex-item--3""></div>
+    <div class="jigsaw__flex-item jigsaw__flex-item--4"></div>
+    <div class="jigsaw__flex-item jigsaw__flex-item--5""></div>
+            <div class=" jigsaw__flex-item jigsaw__flex-item--6""></div>
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="scripts.js"></script>
+
+  
+
+
+</body>
+
+</html>

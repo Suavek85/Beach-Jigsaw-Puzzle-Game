@@ -1,0 +1,90 @@
+/* GENERAL */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a[class="navbar-brand"]:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* JUMBOTRON */
+
+.jumb__main {
+  background-image: url(images/beach-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh;
+}
+
+.jumb__sub {
+  background-color: transparent;
+}
+
+.jumb__main-text {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 900;
+}
+
+/* JIGSAW MAIN */
+
+.jigsaw__grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 0;
+  width: 600px;
+  margin: 50px auto 50px auto;
+}
+
+.jigsaw__grid-item {
+
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}
+
+.jigsaw__grid-item--1,
+.jigsaw__grid-item--3,
+.jigsaw__grid-item--5 {
+  background-color: red;
+}
+
+/* JIGSAW SUB */
+
+.jigsaw__flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 50px auto;
+}
+
+.jigsaw__flex-item {
+
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin-right: 20px;
+
+}
+
+.jigsaw__grid-item--1,
+.jigsaw__grid-item--3,
+.jigsaw__grid-item--5 {
+
+  background-color: red;
+}
+
+.highlight {
+  opacity: 1;
+}
