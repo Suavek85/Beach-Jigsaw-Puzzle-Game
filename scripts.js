@@ -11,7 +11,6 @@ $(function() {
           .detach()
           .css({ top: 0, left: 0 })
           .appendTo(droppedOn);
-
         $(dropped).draggable("destroy");
         var el = $(".alert");
         el.html("Great! Well done.");
@@ -28,23 +27,4 @@ $(function() {
       }
     }
   });
-  /*
-  $(".droppable").droppable({
-    drop: function(event, ui) {
-      $(this);
-      var dropped = ui.draggable;
-      var droppedIdentifier = ui.draggable.attr("data-identifier");
-      var droppedOn = $(this);
-      $(dropped)
-        .detach()
-        .css({ top: 0, left: 0 })
-        .appendTo(droppedOn);
-      if (event.target.dataset.identifier === droppedIdentifier) {
-        console.log("success");
-      } else {
-        console.log("wrong");
-      }
-    }
-  });
-*/
 });
