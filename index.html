@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,10 @@
 </head>
 
 <body>
-  <div class="jumbotron jumb__main">
+
+  <!-- JUMBOTRON-->
+  <div class="jumbotron jumb__main" style='z-index: -100;'>
+
     <!-- NAVBAR-->
     <nav class="navbar navbar-dark bg-dark" style="margin-bottom: 0; background-color: transparent; border: none;">
       <div class="container-fluid">
@@ -50,35 +54,45 @@
     </div>
   </div>
 
-  <!-- LEVEL-->
-  <h1 style='margin-bottom: 30px; font-weight: 600; color: cadetblue' class="text-center display-4">Level: easy.</h1>
-
-  <!-- ALERT-->
-  <div class="alert alert-info alert-extra" role="alert">
-    Try this jigsaw puzzle!
-  </div>
 
   <!-- JIGSAW MAIN-->
-  <div data-identifier='zero' class='jigsaw__grid-container'>
-    <div data-identifier='one' class="droppable ui-widget-header jigsaw__grid-item jigsaw__grid-item--1"></div>
-    <div data-identifier='two' class="droppable jigsaw__grid-item jigsaw__grid-item--2""></div>
-    <div data-identifier='three' class=" droppable jigsaw__grid-item jigsaw__grid-item--3""></div>
-    <div data-identifier='four' class="droppable jigsaw__grid-item jigsaw__grid-item--4"></div>
-    <div data-identifier='five' class="droppable jigsaw__grid-item jigsaw__grid-item--5""></div>
-    <div data-identifier='six' class=" droppable jigsaw__grid-item jigsaw__grid-item--6""></div>
+  <div class='jigsaw__grid-main-container'>
+    <div id='zero' class='jigsaw__grid-container''>
+      <div data-identifier='one' class="droppable ui-widget-header jigsaw__grid-item jigsaw__grid-item--1"></div>
+      <div data-identifier='two' class="droppable jigsaw__grid-item jigsaw__grid-item--2""></div>
+      <div data-identifier='three' class=" droppable jigsaw__grid-item jigsaw__grid-item--3""></div>
+      <div data-identifier='four' class="droppable jigsaw__grid-item jigsaw__grid-item--4"></div>
+      <div data-identifier='five' class="droppable jigsaw__grid-item jigsaw__grid-item--5""></div>
+      <div data-identifier='six' class=" droppable jigsaw__grid-item jigsaw__grid-item--6""></div>
+    </div>
+  <!-- CARD WITH LEVEL AND PROGRESS-->
+  <div class="card text-right card-custom" style="width: 20rem; background-color: lightpink">
+    <div class="card-body">
+      <div class="alert alert-info alert-extra" role="alert">
+        Jigsaw puzzle ready!
+      </div>
+      <h3 style='margin-bottom: 30px; font-weight: 600; color: cadetblue' class="text-center display-4">Level: easy.
+      </h3>
+      <div class="progress">
+        <div id='progress-bar-id' class="progress-bar  progress-bar-animated progress-bar-striped" role="progressbar"
+          aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+      </div>
+    </div>
+  </div>
+
   </div>
 
   <!-- JIGSAW ELEMENTS-->
-  <div data-identifier='zero' class='jigsaw__flex-container'>
+  <div id='sub-zero' class='jigsaw__flex-container'>
     <div data-identifier='three' class=" draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--3""></div>
-    <div data-identifier='five' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--5""></div>
+    <div data-identifier='five' class=" draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--5""></div>
     <div data-identifier='one' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--1"></div>
     <div data-identifier='six' class=" draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--6""></div>
-    <div data-identifier='two' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--2""></div>
+    <div data-identifier='two' class=" draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--2""></div>
     <div data-identifier='four' class="draggable ui-widget-content jigsaw__flex-item jigsaw__flex-item--4"></div>
   </div>
 
- <!-- SCRIPTS-->
+  <!-- SCRIPTS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

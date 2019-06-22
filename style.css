@@ -22,13 +22,14 @@ a[class="navbar-brand"]:hover {
 /* JUMBOTRON */
 
 .jumb__main {
+  position: relative;
   background-image: url(images/beach-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  height: 60vh;
+  height: 70vh;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-  padding-top: 0; 
+  padding-top: 0;
   padding-bottom: 0
 }
 
@@ -42,18 +43,43 @@ a[class="navbar-brand"]:hover {
   font-weight: 800;
 }
 
+/*  CARD WITH INFO  */
+
+.card-custom {
+
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 80px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.alert-extra {
+  text-align: center;
+}
+
+
 /* JIGSAW MAIN */
+
+.jigsaw__grid-main-container {
+  display: flex;
+  width: 900px;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  margin-top: -200px
+}
 
 .jigsaw__grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 0;
-  width: 600px;
-  margin: 50px auto 50px auto;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 0;
+  width: 660px;
+  margin: 0 auto 50px auto;
+  padding: 30px;
+  background-color: white;
 }
 
 .jigsaw__grid-item {
-
   width: 200px;
   height: 200px;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
@@ -71,16 +97,13 @@ a[class="navbar-brand"]:hover {
   display: flex;
   justify-content: center;
   margin: 50px auto 50px auto;
-
 }
 
 .jigsaw__flex-item {
-
   width: 200px;
   height: 200px;
   background-color: green;
   margin-right: 20px;
-
 }
 
 .jigsaw__flex-item--1 {
@@ -109,10 +132,4 @@ a[class="navbar-brand"]:hover {
 
 .highlight {
   opacity: 1;
-}
-
-/*  ALERT */
-
-.alert-extra {
-  text-align: center;
 }

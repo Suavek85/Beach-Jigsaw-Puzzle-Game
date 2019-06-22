@@ -25,6 +25,21 @@ $(function() {
         el.removeClass("alert-info");
         el.removeClass("alert-success");
       }
+      updateProgressBar();
     }
   });
 });
+
+var updateProgressBar = function() {
+  var jigsawContainerLength = $("#zero div").length;
+  var childrenContainers = 6
+  var increaseUnitsEasy = function(newElements) {
+    return Math.round((100 / childrenContainers) * newElements);
+  };
+  var childrenContainers = 6;
+  var progressBarUnits = increaseUnitsEasy(jigsawContainerLength - childrenContainers);
+  $("#progress-bar-id")
+  .attr("aria-valuenow", progressBarUnits)
+  .css("width", progressBarUnits + '%');
+  //add class active
+};
