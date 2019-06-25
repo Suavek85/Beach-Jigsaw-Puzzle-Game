@@ -64,7 +64,7 @@ a[class="navbar-brand"]:hover {
   align-items: flex-start;
   justify-content: center;
   margin: auto;
-  margin-top: -250px
+  margin-top: -350px
 }
 
 .jigsaw__grid-container {
@@ -94,7 +94,7 @@ a[class="navbar-brand"]:hover {
 .jigsaw__flex-container {
   display: flex;
   justify-content: center;
-  margin: 50px auto 50px auto;
+  margin: 0px auto 50px auto;
 }
 
 .jigsaw__flex-item {
