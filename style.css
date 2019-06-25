@@ -22,7 +22,6 @@ a[class="navbar-brand"]:hover {
 /* JUMBOTRON */
 
 .jumb__main {
-  position: relative;
   background-image: url(images/beach-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -46,7 +45,6 @@ a[class="navbar-brand"]:hover {
 /*  CARD WITH INFO  */
 
 .card-custom {
-
   background-color: white;
   padding: 30px;
   padding-bottom: 80px;
@@ -57,16 +55,16 @@ a[class="navbar-brand"]:hover {
   text-align: center;
 }
 
-
 /* JIGSAW MAIN */
 
 .jigsaw__grid-main-container {
   display: flex;
+  position: relative;
   width: 900px;
   align-items: flex-start;
   justify-content: center;
   margin: auto;
-  margin-top: -200px
+  margin-top: -250px
 }
 
 .jigsaw__grid-container {
@@ -106,6 +104,13 @@ a[class="navbar-brand"]:hover {
   margin-right: 20px;
 }
 
+.jigsaw__flex-itemh {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin-right: 20px;
+}
+
 .jigsaw__flex-item--1 {
   background-image: url(images/image_part_001.jpg)
 }
@@ -119,7 +124,7 @@ a[class="navbar-brand"]:hover {
 }
 
 .jigsaw__flex-item--4 {
-  background-image: url(images/image_part_004.jpg)
+  background-image: url(images/image_part_004.jpg);
 }
 
 .jigsaw__flex-item--5 {

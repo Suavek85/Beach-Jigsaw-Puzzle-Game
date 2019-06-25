@@ -1,3 +1,5 @@
+/* DRAGGING AND DROPPING */
+
 $(function() {
   $(".draggable").draggable({ grid: [40, 40] }, { opacity: 0.5 });
   $(".droppable").droppable({
@@ -11,7 +13,7 @@ $(function() {
           .detach()
           .css({ top: 0, left: 0 })
           .appendTo(droppedOn);
-        $(dropped).draggable("destroy");
+        $(dropped).draggable("disable");
         var el = $(".alert");
         el.html("Great! Well done.");
         el.addClass("alert-success");
@@ -43,3 +45,4 @@ var updateProgressBar = function() {
   .css("width", progressBarUnits + '%');
   //add class active
 };
+
